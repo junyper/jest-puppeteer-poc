@@ -6,7 +6,7 @@ describe('example test', () => {
   it('should load without error', async () => {
     let text = await page.evaluate(() => document.body.textContent)
 
-    // to pause text execution and use the dev tools:
+    // to pause test execution and use the dev tools:
     // await jestPuppeteer.debug() 
 
     expect(text).toContain('google')
